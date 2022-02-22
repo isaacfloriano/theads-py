@@ -1,12 +1,11 @@
 <?php
-if (file_exists("contador.txt")!== false) {unlink("contador.txt");fopen
-    ("contador.txt", 'w+');fclose
-    ("contador.txt");}else{fopen
-    ("contador.txt", 'w+');fclose
-    ("contador.txt");}
-    
+if (file_exists("contador.txt") !== false) {
+	$letra = 'r';
+}else{
+	$letra = 'w';
+}
 $arquivo = 'contador.txt';
-$handle = fopen($arquivo,'r+');
+$handle = fopen($arquivo,"$letra+");
 
 $data = fread($handle, 512);
 $contador = $data + 1;
