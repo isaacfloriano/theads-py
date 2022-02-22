@@ -1,0 +1,20 @@
+<?php
+if (file_exists("contador.txt")!== false) {unlink("contador.txt");fopen
+    ("contador.txt", 'w+');fclose
+    ("contador.txt");}else{fopen
+    ("contador.txt", 'w+');fclose
+    ("contador.txt");}
+    
+$arquivo = 'contador.txt';
+$handle = fopen($arquivo,'r+');
+
+$data = fread($handle, 512);
+$contador = $data + 1;
+
+echo $contador;
+
+fseek($handle, 0);
+
+fwrite($handle, $contador);
+
+fclose($handle);
