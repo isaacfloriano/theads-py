@@ -1,5 +1,5 @@
 # Como usar theads-py
-## Simples
+## Artigo 
 link de referência: https://alissonmachado.com.br/python-threads#:~:text=Threads%20s%C3%A3o%20uma%20forma%20de,como%20por%20exemplo%20o%20Apache.
 
 ## Como usar o script
