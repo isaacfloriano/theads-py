@@ -2,7 +2,6 @@
 error_reporting(0);
 
 if (isset($_POST['limpar'])) {
-	# limpar o txt
 	fopen('contador.txt', "w+");
 }
 if (file_exists("contador.txt") !== false) {
